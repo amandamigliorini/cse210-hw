@@ -70,8 +70,6 @@ class Journal
         string date = personalEntry.GetDate();
         personalEntry._date = date;
     }
-
-
 }
 
  
