@@ -20,7 +20,6 @@ public class Fraction
 
     public void SetTop(int top){
         _top = top;
-
     }
 
     public int GetTop(){
@@ -42,7 +41,7 @@ public class Fraction
         return fractionString;
     }
 
-        public double GetDecimalValue(){
+    public double GetDecimalValue(){
         return (double)_top/(double)_bottom;
     }
 
