@@ -153,7 +153,7 @@ public class GoalManager{
                 _score += _goals[index].GetPoints();
             }
         }
-        // if is not a checklist goal, just add the points to the score
+        // if is not a checklist goal or financial goal, just add the points to the score
         else{
             _score += _goals[index].GetPoints();
         }
