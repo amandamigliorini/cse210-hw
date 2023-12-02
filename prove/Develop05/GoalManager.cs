@@ -120,7 +120,7 @@ public class GoalManager{
         int index = choice - 1;
         
         // exceeding requirement: preventing error in case the user types a wrong choice
-        while (_goals.Count < index){
+        while (_goals.Count < choice){
             Console.WriteLine("Couldn't find this goal");
             Console.Write("Which goal did you accomplish? ");
             choice = int.Parse(Console.ReadLine());
