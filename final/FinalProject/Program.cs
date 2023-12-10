@@ -4,6 +4,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello FinalProject World!");
+        Console.Clear();
+        Quote newQuote = new Quote();
+        AppointmentManager appointmentManager = new AppointmentManager();
+        appointmentManager.Start();
     }
 }

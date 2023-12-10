@@ -7,6 +7,7 @@ class Program
         Console.Clear();
         GoalManager goalManager = new GoalManager();
         goalManager.Start();
+     
 
     }
 }
