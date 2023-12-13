@@ -4,15 +4,23 @@ public abstract class Appointment{
     private string _date = " ";
     private string _time = " ";
     private string _endTime = " ";
-    private bool _isFulfilled = false;
+    private bool _isFulfilled;
 
-    public  Appointment(){
+    public  Appointment(string name, string description, string date, string time, string endTime){
+        _name = name;
+        _description = description;
+        _date = date;
+        _time = time;
+        _endTime = endTime;
 
 
     }
 
-    public abstract void FulfillAppointment();
-    //This method is the method that each child class will use to mark a appointment as complete.
+    public virtual void FulfillAppointment(){
+         //This method is the method that each child class will use to mark a appointment as complete.
+        SetFulfillment(true);
+    }
+   
 
     public abstract bool IsFulfilled();
     //This method should return true if the appointment is completed. 

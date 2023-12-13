@@ -1,19 +1,26 @@
+using System.Globalization;
 public class Time {
-    private string _start="";
-    private string _end ="";
-    private bool _isOccupied = false;
-    List <Time> _times = new List<Time>();
+    private DateTime _start;
+    private DateTime _end;
+   
+    
 
-    public Time(string start, string end){
-        _start = start;
-        _end = end;
-        
+    public Time(string date, string start, string end){
+        date = date.Trim();
+        start = start.Trim();
+        end = end.Trim();
+        _start = DateTime.ParseExact($"{date} {start}", "yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture);
 
+        _end = DateTime.ParseExact($"{date} {end}", "yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture);
     }
 
-    public bool IsOccupied(){
-        // not finished 
-        return _isOccupied;
+    public bool IsOccupied(List<Time> times){
+        foreach (Time time in times){
+            if ((_start >= time._start && _start < time._end) || (time._start >= _start && time._start < _start + (_end - _start))){
+                return true;
+            }
+        }
+        return false;
     }
 
 

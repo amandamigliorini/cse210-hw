@@ -1,0 +1,4 @@
+Dentist~~2023-12-12~~18:00~~19:00~~Dentist Today~~False
+Final Project~~2023-12-12~~23:00~~23:59~~CSE210~~Due Date~~False
+Staff Meeting~~2023-12-12~~15:00~~16:00~~None~~Meeting with the team~~1~~1~~True
+Ministering~~2023-12-12~~20:00~~20:30~~Home~~Home~~Call to sister Migliorini~~True
